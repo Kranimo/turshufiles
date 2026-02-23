@@ -2,7 +2,7 @@ from flask import Flask, send_from_directory, render_template_string
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/turshufiles/')
 def welcome():
     # Serve the welcome.html page directly from string or file
     welcome_html = """
@@ -15,7 +15,7 @@ def welcome():
     <body>
         <h2>welcome</h2>
         <h4>click here</h4>
-        <p><a href="/main">the turshu files</a></p>
+        <p><a href="turshufiles/main">the turshu files</a></p>
     </body>
     </html>
     """
@@ -31,3 +31,4 @@ def images(filename):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
