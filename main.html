@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <title>turshus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #005f3f;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery img {
+            width: 18%;   /* small enough so 5 fit in one row */
+            min-width: 150px;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid transparent;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            border-color: #8f03d0;
+        }
+
+        a {
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <img src="/images/images.png" alt="Photo 1">
+        <img src="/images/photo2.webp" alt="Photo 2">
+        <img src="/images/photo3.png" alt="Photo 3">
+        <img src="/images/photo4.webp" alt="Photo 4">
+        <img src="/images/photo5.webp" alt="Photo 5">
+    </div>
+
+    <h1>turshu files</h1>
+    <h2>should we be concerned</h2>
+    <h3>mat odev daha baslamadim</h3>
+    <p><a href="/">welcome sayfasına git</a></p>
+
+</body>
+</html>
